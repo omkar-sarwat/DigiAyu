@@ -43,8 +43,8 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "Emergency Service",
-    url: "/miclistener",
+    title: "Document Sentinel",
+    url: "/digilocker",
   },
   {
     id: "4",

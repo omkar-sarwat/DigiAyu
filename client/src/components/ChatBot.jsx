@@ -29,7 +29,7 @@ const DiseaseInputForm = () => {
   const generateAnswer = async () => {
     try {
       const response = await axios.post(
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyB5HJkYLT-A94YKlybi46UtRyPBl_Lry3o',
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=your api key',
         {
           contents: [{
             parts: [{

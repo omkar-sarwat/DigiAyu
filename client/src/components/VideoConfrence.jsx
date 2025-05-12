@@ -9,8 +9,8 @@ const VideoConference = () => {
 
     let myMeeting = async (element) => {
         // generate Kit Token
-         const appID = 440869410;
-         const serverSecret = "dbe82bcc56bc538a4a31e9538e48e766";
+         const appID = "";
+         const serverSecret = "";
          const kitToken =  ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID,  Date.now().toString(),  'DWEDWFWC23');
    
        

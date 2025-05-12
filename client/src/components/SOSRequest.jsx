@@ -27,12 +27,12 @@ const SOSRequest = () => {
     const languageMapping = {
       english: 'in English',
       hindi: 'in Hindi',
-      Marathi: 'in Marathi',
+      telugu: 'in Telugu',
     };
 
     try {
       const response = await axios.post(
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyB5_EJ_5xv31Jd1cwdVzdmTezotn9u8_D8',
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key= your api key',
         {
           contents: [{
             parts: [{
@@ -94,7 +94,7 @@ const SOSRequest = () => {
       <div className="flex flex-col md:flex-row justify-between">
         <div className="left w-full md:w-3/5 left-0 max-w-3xl mx-auto bg-black shadow-md rounded border border-zinc-800 px-8 pt-6 pb-8 mb-4 md:ml-16">
           <h2 className="text-2xl font-bold mb-6 text-red-500">Emergency SOS Request / आपातकालीन एसओएस अनुरोध / 
-          आपातकालीन एसओएस विनंती </h2>
+అత్యవసర sos అభ్యర్థన</h2>
           {errorMessage && <p className="text-red-500 mb-4">{errorMessage}</p>}
           {successMessage && <p className="text-green-500 mb-4">{successMessage}</p>}
           <div className="mb-3">
@@ -112,7 +112,7 @@ const SOSRequest = () => {
           </div>
           <div className="mb-3">
             <label className="block text-white mb-2">Reason for SOS / एसओएस का कारण / 
-            एसओएस साठी कारण:</label>
+SOS కోసం కారణం:</label>
             <input
               type="text"
               name="reason"
@@ -124,7 +124,7 @@ const SOSRequest = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="block text-white mb-2">Health Problem / स्वास्थ्य समस्या / आरोग्य समस्या:</label>
+            <label className="block text-white mb-2">Health Problem / स्वास्थ्य समस्या / ఆరోగ్య సమస్య:</label>
             <input
               type="text"
               name="healthProblem"
@@ -136,8 +136,7 @@ const SOSRequest = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="block text-white mb-2">Estimated Time Needed / अपेक्षित अनुमानित समय / अपेक्षित अंदाजित वेळ
-            :</label>
+            <label className="block text-white mb-2">Estimated Time Needed / अपेक्षित अनुमानित समय / అంచనా వేసిన సమయం:</label>
             <input
               type="text"
               name="estimatedTime"
@@ -158,7 +157,7 @@ const SOSRequest = () => {
             >
               <option value="english">English</option>
               <option value="hindi">Hindi</option>
-              <option value="Marathi">Marathi</option>
+              <option value="telugu">Telugu</option>
             </select>
           </div>
           <Button onClick={handleSubmit}>

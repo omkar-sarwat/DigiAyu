@@ -153,8 +153,8 @@ const PatientDetails = () => {
             <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl w-full border-4 border-purple-500 mt-8">
                 <div className="text-center mb-6">
                     <h2 className="text-4xl font-bold text-purple-700">Medical Record Certificate</h2>
-                    <p className="text-lg text-purple-500">Multispecialist Hospital</p>
-                    <p className="text-sm text-purple-400">addresss</p>
+                    <p className="text-lg text-purple-500">Yash Multispecialist Hospital</p>
+                    <p className="text-sm text-purple-400">Kranti Chowk Cidco NANDED-431603</p>
                 </div>
                 <div className="border-t border-b border-gray-300 py-6 mb-6">
                     <h3 className="text-2xl font-bold mb-4 text-purple-600">Patient Records</h3>
