@@ -1,1 +1,85 @@
-/node_modules
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+.yarn/
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+/dist
+/build
+/out
+/.next
+client/dist/
+backend/dist/
+blockchain/artifacts/
+blockchain/cache/
+blockchain/typechain-types/
+
+# Testing
+/coverage
+coverage.json
+*.lcov
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Debug logs
+npm-debug.log*
+debug.log
+logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# Hardhat files
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# Local blockchain data
+.hardhat/
+blockchain/deployments/localhost/
+
+# IPFS files
+.ipfs/
+
+# Database
+*.sqlite
+*.db
+
+# Records and temporary files
+records/*
+!records/.gitkeep
+workspace/
+
+# Compiled output
+*.compiled.js
+*.compiled.js.map
+*.min.js
+*.min.css
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
